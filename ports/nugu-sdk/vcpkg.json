@@ -1,0 +1,51 @@
+{
+    "name": "nugu-sdk",
+    "version": "1.7.5",
+    "port-version": 1,
+    "description": "NUGU SDK is Linux based client library which is possible to use various NUGU Service by connecting to NUGU Platform.",
+    "homepage": "https://github.com/nugu-developers/nugu-linux",
+    "license": "Apache-2.0",
+    "dependencies": [
+        {
+            "name": "vcpkg-cmake",
+            "host": true
+        },
+        {
+            "name": "vcpkg-cmake-config",
+            "host": true
+        },
+        {
+            "name": "curl",
+            "features": ["http2"]
+        },
+        "glib",
+        "opus",
+        "libogg",
+        "nugu-json",
+        "pthreads"
+    ],
+    "default-features": [
+        "examples"
+    ],
+    "features": {
+        "examples": {
+            "description": "Builds examples"
+        },
+        "gstreamer": {
+            "description": "Builds with GSTREAMER support",
+            "dependencies": [
+                {
+                    "name": "gstreamer",
+                    "features": [
+                        "plugins-base",
+                        "plugins-good",
+                        "plugins-bad",
+                        "plugins-ugly",
+                        "soup",
+                        "libav"
+                    ]
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "name": "nugu-json",
+    "version": "1.7.5",
+    "port-version": 1,
+    "description": "RapidJSON wrapper library for NUGU SDK.",
+    "homepage": "https://github.com/nugulinux/njson",
+    "license": "Apache-2.0",
+    "dependencies": [
+        {
+            "name": "vcpkg-cmake",
+            "host": true
+        },
+        {
+            "name": "vcpkg-cmake-config",
+            "host": true
+        },
+        "rapidjson",
+        "gtest",
+        "pkgconf"
+    ]
+  }
+  

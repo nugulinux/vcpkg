@@ -1,0 +1,13 @@
+diff --git a/nugu.h.in b/nugu.h.in
+index 72c9b95f..66a0cef8 100644
+--- a/nugu.h.in
++++ b/nugu.h.in
+@@ -41,7 +41,7 @@ extern "C" {
+ 
+ #define NUGU_REGISTRY_URL "@NUGU_REGISTRY_URL@"
+ 
+-#define NUGU_PLUGIN_DIR "@plugindir@"
++#define NUGU_PLUGIN_DIR ""
+ 
+ 
+ #if defined(_WIN32)

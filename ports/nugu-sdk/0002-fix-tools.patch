@@ -1,0 +1,21 @@
+diff --git a/examples/CMakeLists.txt b/examples/CMakeLists.txt
+index 4e8d3367..35f02bc8 100644
+--- a/examples/CMakeLists.txt
++++ b/examples/CMakeLists.txt
+@@ -38,6 +38,3 @@ ENDIF()
+ 
+ # A shell script that executes a program using the token information
+ # generated in the OAuth2 example.
+-INSTALL(PROGRAMS nugusdk_start_sample.sh
+-	DESTINATION ${CMAKE_INSTALL_BINDIR}
+-	RENAME nugusdk_start_sample)
+diff --git a/examples/oob_setup/CMakeLists.txt b/examples/oob_setup/CMakeLists.txt
+index 3cf13a95..9f7f9ba1 100644
+--- a/examples/oob_setup/CMakeLists.txt
++++ b/examples/oob_setup/CMakeLists.txt
+@@ -1,4 +1,4 @@
+-INSTALL(PROGRAMS nugu_oob_server.py DESTINATION ${CMAKE_INSTALL_BINDIR} RENAME nugu_oob_server)
++INSTALL(PROGRAMS nugu_oob_server.py DESTINATION ${CMAKE_INSTALL_BINDIR})
+ 
+ # Optional installation
+ # - systemd service file for nugu_oob
