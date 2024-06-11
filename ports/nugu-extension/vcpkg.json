@@ -1,0 +1,22 @@
+{
+    "name": "nugu-extension",
+    "version": "1.7.5",
+    "port-version": 1,
+    "description": "NUGU Extension is Linux based client library which is possible to use various NUGU Service by connecting to NUGU Platform.",
+    "homepage": "https://github.com/nugulinux/nugu-extension",
+    "license": "Apache-2.0",
+    "dependencies": [
+        {
+            "name": "vcpkg-cmake",
+            "host": true
+        },
+        {
+            "name": "vcpkg-cmake-config",
+            "host": true
+        },
+        "glib",
+        "nugu-sdk",
+        "sqlite3",
+        "pthreads"
+    ]
+}
